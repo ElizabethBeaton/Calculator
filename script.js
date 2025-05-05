@@ -71,7 +71,7 @@ equals.style.backgroundColor = "#f743dc";
 
 add.addEventListener("click", () => handleSymbolClick("+"));
 minus.addEventListener("click", () => handleSymbolClick("-"));
-multiply.addEventListener("click", () => handleSymbolClick("*"));
+multiply.addEventListener("click", () => handleSymbolClick("x"));
 divide.addEventListener("click", () => handleSymbolClick("/"));
 
 
@@ -88,7 +88,6 @@ clear.style.backgroundColor = "#f743dc";
 let firstInput = "";
 let symbol = "";
 let secondInput = "";
-const total = "";
 
 function addSum() {
   return Number(firstInput) + Number(secondInput);
@@ -133,7 +132,7 @@ function displayEquation() {
 }
 equals.addEventListener("click", displayEquation);
 
-//ADDED RN
+
 function handleNumberClick(event) {
   const num = event.target.textContent;
 
@@ -148,11 +147,21 @@ function handleNumberClick(event) {
 }
 
 function handleSymbolClick(sym) {
-  symbol = sym;
-  document.getElementById(
-    "currentEquation"
-  ).textContent = `${firstInput} ${symbol} ${secondInput}`;
+    symbol = sym
+  document.getElementById("currentEquation").textContent = `${firstInput} ${symbol} ${secondInput}`;
 }
+
+
+clear.addEventListener("click", () => {
+    console.log("cleared!")
+    firstInput = "";
+    symbol = "";
+    secondInput = "" ;
+    document.getElementById("currentEquation").textContent = "";
+    document.getElementById("displayOutput").textContent = "";
+});
+
+
 
 
 
