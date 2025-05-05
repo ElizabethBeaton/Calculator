@@ -1,5 +1,6 @@
-.calculator {
+.calculator, #displayOutput {
     max-width: 320px;
+    margin: auto;
 }
 
 .display {
@@ -27,6 +28,4 @@
     display: block;
     margin: auto;
     margin-top: 18px;
-
-
 }
