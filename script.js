@@ -123,6 +123,7 @@ function displayEquation() {
     
     equation.style.padding = "14px";
     equation.style.border = "none";
+    equation.style.borderRadius = "10px"
     equation.style.backgroundColor = "#ffabe4";
     document.getElementById("displayOutput").appendChild(equation);
 
@@ -142,8 +143,12 @@ function handleNumberClick(event) {
     secondInput += num;
   }
 
-  //display.textContent = `${firstInput} ${symbol} ${secondInput}`;
-  document.getElementById("currentEquation").textContent = `${firstInput} ${symbol} ${secondInput}`;
+  const currentEquation = document.getElementById("currentEquation")
+  currentEquation.textContent = `${firstInput} ${symbol} ${secondInput}`;
+  currentEquation.style.marginTop = "8px"
+  currentEquation.style.fontSize = "20px"
+  currentEquation.style.textAlign = "center"
+  
 }
 
 function handleSymbolClick(sym) {
