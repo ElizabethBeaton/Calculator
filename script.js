@@ -1,5 +1,3 @@
-
-
 const add = document.getElementById("add");
 const minus = document.getElementById("minus");
 const multiply = document.getElementById("multiply");
@@ -46,6 +44,8 @@ equals.style.fontSize = "22px";
 equals.style.borderRadius = "10px";
 equals.style.border = "none";
 equals.style.backgroundColor = "#f743dc";
+equation.addEventListener("click", displayEquation);
+// when the equals button is clicked, the displayEquation function is run which opens the <p> which displays the equation
 
 clear.textContent = "clear";
 clear.style.cursor = "pointer";
@@ -54,3 +54,29 @@ clear.style.fontSize = "16px";
 clear.style.borderRadius = "10px";
 clear.style.border = "none";
 clear.style.backgroundColor = "#f743dc";
+
+const firstInput = "";
+const symbol = "";
+const secondInput = "";
+const total = "";
+
+function add() {}
+
+function minus() {}
+
+function multiply() {}
+
+function divide() {}
+
+function operate(firstInput, symbol, secondInput) {}
+
+function displayEquation() {
+  const equation = document.createElement("p");
+  equation.textContent = "";
+  equation.style.padding = "14px";
+  equation.style.border = "none";
+  equaltion.style.backgroundColor = "#ffabe4";
+  calculator.appendChild(equation);
+}
+
+// add event listener. only if first number is clicked then this box should display
