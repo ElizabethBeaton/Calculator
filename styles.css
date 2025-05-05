@@ -1,0 +1,32 @@
+.calculator {
+    max-width: 320px;
+}
+
+.display {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.display > div {
+    padding: 8px;
+    background-color: rgb(224, 203, 215);
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+.zero {
+    padding: 8px;
+    background-color: rgb(224, 203, 215);
+    text-align: center;
+    border-radius: 10px;
+    max-width: 80px;
+    height: 60px;
+    display: block;
+    margin: auto;
+    margin-top: 18px;
+
+
+}
