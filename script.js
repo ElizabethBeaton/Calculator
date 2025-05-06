@@ -88,6 +88,7 @@ minus.addEventListener("click", () => handleSymbolClick("-"));
 multiply.addEventListener("click", () => handleSymbolClick("*"));
 divide.addEventListener("click", () => handleSymbolClick("/"));
 
+
 // styling clear button
 clear.textContent = "clear";
 clear.style.cursor = "pointer";
